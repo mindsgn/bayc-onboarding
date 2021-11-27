@@ -31,7 +31,7 @@ const Beneficiary: React.FC<BeneficiaryProps> = ({
   return (
     <>
       <div className="w-full relative z-20 pt-40">
-        <div className="flex flex-column lg:flex-row flex-wrap justify-center items-start mx-auto w-full">
+        <div className="flex flex-column md:flex-row justify-center items-start mx-auto w-full">
           <div className="w-1/2 md:w-1/3">
             <img
               className="w-full h-104 object-cover rounded-3xl"

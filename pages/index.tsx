@@ -230,7 +230,7 @@ export default function Index(): JSX.Element {
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-lg xl:text-xl 2xl:text-3xl base:w-6/12 lg:w-1/3 pt-12 mx-auto text-gray-900 font-light text-center bg-primary">
+                <p className="text-lg sm:text-xl lg:text-xl xl:text-xl 2xl:text-3xl base:w-6/12 lg:w-1/3 pt-12 mx-auto text-gray-900 font-light text-center bg-primary">
                   This airdrop sends 100 $POP to your wallet and {MAX_VOTES}{" "}
                   $POP to the charities you select. Simply verify BAYC
                   ownership, pick your charity allocations, and await your
