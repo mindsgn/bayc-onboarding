@@ -31,8 +31,8 @@ const Beneficiary: React.FC<BeneficiaryProps> = ({
   return (
     <>
       <div className="w-full relative z-20 pt-40">
-        <div className="flex flex-row flex-wrap  justify-center items-start mx-auto w-full 2xl:w-8/12">
-          <div className="">
+        <div className="flex flex-column lg:flex-row flex-wrap justify-center items-start mx-auto w-full">
+          <div className="w-1/2 md:w-1/3">
             <img
               className="w-full h-104 object-cover rounded-3xl"
               src={`/images/${beneficiary.image.image}`}
@@ -63,7 +63,7 @@ const Beneficiary: React.FC<BeneficiaryProps> = ({
               </div>
             </div>
           </div>
-          <div className="w-2/3">
+          <div className="w-1/2 md:w-2/3">
             <BeneficiaryCard
               beneficiary={beneficiary}
               setVotes={setVotes}
