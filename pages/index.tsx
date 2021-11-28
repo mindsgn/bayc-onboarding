@@ -198,8 +198,8 @@ export default function Index(): JSX.Element {
               isActive={step === Step.Beneficiary}
               maxVotes={MAX_VOTES}
               availableVotes={availableVotes}/>
+            </div>
           </div>
-        </div>
         {chainId === 1 && (
           <BeneficiaryStepBottom
             isActive={step === Step.Beneficiary}
@@ -212,72 +212,6 @@ export default function Index(): JSX.Element {
           />
         )}
       </div>
-      <div
-        className={`hidden w-full h-screen bg-white overflow-x-hidden`}
-      >
-        <div
-          className="relative h-full min-h-screen w-screen bg-center bg-contain bg-no-repeat bg-hero-pattern"
-          style={{ height: "111%" }}
-        >
-          <div className="">
-            <Navbar />
-            <div className="flex flex-col w-full">
-              <div className="h-full bg-primary pt-12">
-                <img
-                  src="/images/hero.png"
-                  alt="hero"
-                  className="w-1/3 mx-auto"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="text-lg sm:text-xl lg:text-xl xl:text-xl 2xl:text-3xl base:w-6/12 lg:w-1/3 pt-12 mx-auto text-gray-900 font-light text-center bg-primary">
-                  This airdrop sends 100 $POP to your wallet and {MAX_VOTES}{" "}
-                  $POP to the charities you select. Simply verify BAYC
-                  ownership, pick your charity allocations, and await your
-                  airdrop. In the meantime, join us in{" "}
-                  <a
-                    className="font-normal cursor-pointer"
-                    href="https://discord.gg/RN4VGqPDwX"
-                    target="_blank">
-                    Discord
-                  </a>{" "}
-                  and follow us on{" "}
-                  <a
-                    className="font-normal cursor-pointer"
-                    href="https://twitter.com/popcorn_DAO"
-                    target="_blank">
-                    Twitter
-                  </a>
-                </p>
-                <MetamaskStep
-                  isActive={step === Step.Wallet}
-                  setStep={setStep}
-                  availableSlots={availableSlots}
-                  maxSlots={MAX_SLOTS}
-                  activate={activate}
-                />
-                <EndStep isActive={step === Step.End} />
-                <BeneficiaryStepTop
-                  isActive={step === Step.Beneficiary}
-                  maxVotes={MAX_VOTES}
-                  availableVotes={availableVotes}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        {chainId === 1 && (
-          <BeneficiaryStepBottom
-            isActive={step === Step.Beneficiary}
-            maxVotes={MAX_VOTES}
-            availableVotes={availableVotes}
-            setAvailableVotes={setAvailableVotes}
-            account={account}
-            registeredContacts={registeredContacts}
-            submitVotes={addApe}
-          />
-        )}
-        </div>
       </div>
     </>
   );

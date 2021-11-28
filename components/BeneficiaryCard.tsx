@@ -29,15 +29,15 @@ const BeneficiaryCard: React.FC<BeneficiaryCardProps> = ({
     <div className="w-full rounded-3xl shadow-lg border border-gray-200 base:mx-8 pb-8 relative z-20 bg-white">
       <div className="flex-shrink-0">
         <div className="px-10 pb-12 mt-8">
-          <div className="flex flex-row items-top justify-between h-32">
+          <div className="flex flex-row items-top justify-start h-32">
             <a
-              className="text-4xl base:text-6xl cursor-pointer w-2/3"
+              className="absolute left-0 text-4xl base:text-6xl cursor-pointer w-2/3"
               href={beneficiary.url}
               target="_blank"
             >
               {beneficiary.name}
             </a>
-            <p className="text-2xl font-light">0{beneficiaryIndex + 1}/05</p>
+            <p className="absolute right-0 text-2xl font-light">0{beneficiaryIndex + 1}/05</p>
           </div>
           <div className="space-y-5 h-full base:h-104 mt-12">
             <p className="text-xl font-light tracking-wide">

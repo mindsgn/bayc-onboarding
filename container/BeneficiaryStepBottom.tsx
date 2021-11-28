@@ -50,7 +50,12 @@ export default function BeneficiaryStepBottom({
     isActive &&
     account && (
       <>
-        <div className="block mt-1 md:mt-52 relative z-0 w-full h-full bg-no-repeat bg-center bg-contain bg-beneficiary-pattern">
+        <div className="flex flex-row w-full md:mt-100">
+          <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-medium text-center mx-auto">
+            Select your charity allocations
+          </h1>
+        </div>
+        <div className="block relative z-0 w-full h-full bg-no-repeat bg-bottom bg bg-contain bg-beneficiary-pattern">
           <div className="w-10/12 mx-auto h-full relative">
             <div className="w-full mx-auto h-full relative">
               <div className="w-full lg:w-2/3 mx-auto">
@@ -63,7 +68,7 @@ export default function BeneficiaryStepBottom({
                     beneficiaryIndex={beneficiaryIndex}
                     setBeneficiaryIndex={setBeneficiaryIndex}
                   />
-                  <div className="mt-28 pl-4 ml-24 pb-24 relative z-20">
+                  <div className="mt-28 pb-24 relative z-20">
                     <p className="text-gray-500 text-base text-center">Submit your email to finish your token claim</p>
                     <div className="relative z-20 mx-auto mt-2 shadow-lg border border-gray-100 bg-white rounded-xl py-2 px-2 w-10/12 2xl:w-8/12 flex flex-row items-center justify-between">
                       <input
@@ -114,7 +119,7 @@ export default function BeneficiaryStepBottom({
                 </div>
                 <img
                   src="/images/arrowCurved.svg"
-                  className="absolute z-0 bottom-32 base:top-18 lg:top-14"
+                  className="absolute z-0 bottom-32 base:top-18 lg:top-14 left-20"
                 />
               </div>
             </div>

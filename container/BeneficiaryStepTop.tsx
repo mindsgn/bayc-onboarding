@@ -25,7 +25,7 @@ export default function BeneficiaryStepTop({
             </p>
           </div>
         </div>
-        <p className="text-lg xl:text-xl 2xl:text-2xl font-semibold mx-auto text-center w-11/12 md:w-1/2 base:w-1/3 mt-4 md:mt-8 2xl:mt-12">
+        <p className="text-sm font-semibold mx-auto text-center w-11/12 md:w-1/2 base:w-1/3 mt-4 md:mt-8 2xl:mt-12">
           Step 2: You can now allocate {maxVotes} token between the
           organizations below to claim your POP. Finish the process by
           submitting your email to claim your POP.
